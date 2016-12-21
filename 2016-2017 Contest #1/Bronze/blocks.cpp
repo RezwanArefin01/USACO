@@ -5,7 +5,7 @@ int main() {
     freopen("blocks.in", "r", stdin);
     freopen("blocks.out", "w", stdout);
     int n; cin>>n;
-    while(n--) {
+    while(n--) { 
         string a,b;
         cin>>a>>b;
         sort(a.begin(), a.end()); sort(b.begin(), b.end());

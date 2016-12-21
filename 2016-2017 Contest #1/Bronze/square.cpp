@@ -20,7 +20,7 @@ int main() {
         minx = min(minx, x);
         miny = min(miny, y);
         maxx = max(maxx, x);
-        maxy = max(maxy, y);
+        maxy = max(maxy, y); 
     }
     int d = max( abs(maxx - minx) , abs(maxy - miny));
     cout<<d*d<<endl;

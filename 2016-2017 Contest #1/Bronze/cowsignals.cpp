@@ -14,12 +14,11 @@ int main() {
         for(int j=0; j<m; j++) {
             for(int k1 = 0; k1 <k; k1++) {
                 for(int k2=0; k2 < k; k2++)
-                    A[i*k + k1][j*k + k2] = a[i][j];
+                    A[i*k + k1][j*k + k2] = a[i][j]
             }
         }
     }
     for(int i=0; i<k*n; i++, cout<<endl)
         for(int j=0; j<k*m; j++)
             cout<<A[i][j];
-}
- 
+} 
