@@ -2,12 +2,10 @@
 using namespace std;
 typedef long long ll; 
 typedef pair<int,int> ii;
-
 int main(int argc, char const *argv[]) {
 	freopen("citystate.in", "r", stdin);
 	freopen("citystate.out", "w", stdout);
-	int n; cin>>n;
-	map<string,int> cnt;
+	int n; cin>>n;	map<string,int> cnt;
 	for(int i=0; i<n; i++) {
 		string a,b,tmp; cin>>tmp>>b; a = tmp.substr(0,2);
 		string key = a+b; 
