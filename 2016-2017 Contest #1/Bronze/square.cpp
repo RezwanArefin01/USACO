@@ -25,4 +25,3 @@ int main() {
     int d = max( abs(maxx - minx) , abs(maxy - miny));
     cout<<d*d<<endl;
 }
- 
