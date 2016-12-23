@@ -1,2 +1,2 @@
 # USACO
-My accepted solutions from USACO 
+My Accepted Solutions from USACO Contests. All in C++11 :) 
