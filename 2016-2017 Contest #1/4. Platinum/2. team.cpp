@@ -10,8 +10,8 @@ struct data {
 };
 const int MOD = 1000000009;
 int main(int argc, char const *argv[]) {
-	freopen("team.in", "r", stdin);
-	freopen("team.out", "w", stdout);
+    freopen("team.in", "r", stdin);
+    freopen("team.out", "w", stdout);
     int n, m, k; cin>>n>>m>>k;
     vector<data> p; int tmp;
     for(int i = 0; i < n; i++) cin>>tmp, p.emplace_back(tmp,1);
