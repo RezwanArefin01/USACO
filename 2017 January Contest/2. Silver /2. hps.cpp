@@ -1,9 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-typedef long long ll;
-typedef pair<int,int> ii;
 int win(char a, char b) {
-	if(a == b) return 0;
 	if(a == 'H' && b == 'S') return 1;
 	if(a == 'S' && b == 'P') return 1;
 	if(a == 'P' && b == 'H') return 1;
@@ -22,11 +19,11 @@ int main(int argc, char const *argv[]) {
 	} 
 	int ans = max(h[n], max(s[n],p[n]));
 	for(int i=1; i<=n; i++) {
-		ans = max(ans, h[i] - h[0] + p[n] - p[i]);
-		ans = max(ans, h[i] - h[0] + s[n] - s[i]);
-		ans = max(ans, s[i] - s[0] + p[n] - p[i]);
-		ans = max(ans, s[i] - s[0] + h[n] - h[i]);
-		ans = max(ans, p[i] - p[0] + s[n] - s[i]);
-		ans = max(ans, p[i] - p[0] + h[n] - h[i]);
+		ans = max(ans, h[i] + p[n] - p[i]);
+		ans = max(ans, h[i] + s[n] - s[i]);
+		ans = max(ans, s[i] + p[n] - p[i]);
+		ans = max(ans, s[i] + h[n] - h[i]);
+		ans = max(ans, p[i] + s[n] - s[i]);
+		ans = max(ans, p[i] + h[n] - h[i]);
 	} cout<<ans<<endl;
 }	
